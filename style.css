@@ -1,136 +1,107 @@
 *{
+
     margin: 0;
     padding: 0;
-    font-family: Gilroy;
     box-sizing: border-box;
-
 }
 
 html,body{
-    width: 100%;
+
     height: 100%;
+    width: 100%;
+
 }
 
-#main{
-    width: 100%;
+#main {
     height: 100%;
-    
+    width: 100%;
+    background-color: #965154;
     display: flex;
+    overflow:hidden ;
 }
 
-#left{
-    width: 40%;
+#part1{
     height: 100%;
-    position: relative;
-    
-}
-#right{
-  width: 60%;
-  height: 100%;
-  background-color: red;
-
+    width: 26%;
+    /* background-color: aqua; */
 }
 
-#rtop{
-    width: 100%;
-    height: 50%;
-    background-color: blue;
-    display: flex;
-}
-
-#rbottom{
-    width: 100%;
-    height: 50%;
-   background-image: url(https://images.unsplash.com/photo-1619241638225-14d56e47ae64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80);
-   background-position: center;
-   background-size: cover;
-}
-
-#rtopleft{
-    width: 55%;
+#part2{
     height: 100%;
-   background-image: url(https://images.unsplash.com/photo-1592187270271-9a4b84faa228?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG9yYW5nZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
-   background-position: center;
-   background-size: cover;
-}
-#rtopright{
-    width: 45%;
-    height: 100%;
-    background-image: url(https://images.unsplash.com/photo-1586788224331-947f68671cf1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG9yYW5nZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
-    background-position: bottom;
+    width: 67%;
+    background-color: rgb(114, 175, 1);
+  background-image: url(https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bW9kZWx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60);
     background-size: cover;
-}
-
-#lnav{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 20px 30px;
-}
-
-#lnavr a{margin-right: 20px;
-
-
+    background-position :center;
 
 }
 
-#lnavr{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-    font-size: 15px;
+#overlay{
+      height: 100%;
+      width: 100%;
+      background-color: #9651546c;
+
+}
+#part3{
+    height: 100%;
+    width: 7%;
+    /* background-color: rgb(226, 1, 31); */
 }
 
-#lnav i{
- color: royalblue;
-}
+#text-div{
 
-#left #textcenter{
- 
+    width: 400px;
+    /* height: 300px; */
     position: absolute;
-    top: 40%;
-    left:20%;
-    transform: translate(-50,-50);
-
+    /* background-color: rgb(255, 3, 3); */
+      left: 7%;
+    top: 45%;
+    transform: translate(0,-50);
 }
 
-#textcenter h1{
-    font-size: 90px;
+#text-div>h1{
+
+    font-size: 75px;
+    font-family: 'league spartan';
+    font-weight:800;
+    line-height: 75x;
+    letter-spacing: 8px;
+    color: antiquewhite;
+    text-transform: uppercase;
+}
+
+#small-image{
+
+    height: 400px;
+    width: 300px;
+    /* background-color: rgb(233, 130, 3); */
+    background-image: url(https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bW9kZWx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translate(0 0 -50 -50);
+}
+
+#vertical{
+      position: absolute;
+      transform: rotate(90deg);
+      text-transform: uppercase;
+      right: -50%;
+      top: -8%;
+      transform-origin: 0% 0%;
+    /* width: 100%; */
+    /* background-color: #ee0707; */
+
+
+}
+#vertical h1{
+    font-size: 250px;
+    font-family: 'monument';
     font-weight: 900;
-
-}
-#textcenter p{
-    opacity: .6;
-    font-size: 13px;
-   line height:20px ;
-   margin top:30px ;
-   margin-bottom:30px ;
-   
-
-}
-
-#textcenter a{
-
-    text-decoration: none;
-    color: black;
-    border-bottom: 1px solid black;
-    padding-bottom: 10px;
-    font size: 20px;
-    font-weight: 600;
-}
-
-@media(max-width: 500px){
-
-    #main{
-        flex-direction: column;
-    }
-    #main #left{
-        width: 100%;
-    }
-
-    #main #right{
-        width: 100%;
-    }
+    letter-spacing: 18px;
+    color: transparent;
+    -webkit-text-stroke: 4px;
+    -webkit-text-stroke-color: beige;
 }
